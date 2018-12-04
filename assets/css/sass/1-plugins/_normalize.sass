@@ -1,0 +1,132 @@
+html
+  position: relative
+
+
+html, body
+  font-family: sans-serif
+  height: 100%
+
+
+*, *:before, *:after
+  box-sizing: border-box
+
+
+body
+  padding: 0
+  background-color: white
+  font-size: 16px
+  line-height: 1.5
+  font-family: "proxima-nova", Arial, sans-serif
+  font-style: normal
+  font-weight: 400
+  color: $black
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+
+
+a
+  text-decoration: none
+  //outline: 0
+  cursor: pointer
+
+
+//a:active,
+//a:hover,
+//a:focus,
+//a:visited
+  outline: 0
+
+
+a::-moz-focus-inner
+  border: 0
+  //outline: 0
+
+
+i, em
+  font-style: italic
+
+
+button,
+input,
+optgroup,
+select,
+textarea
+  //outline: 0
+  border: none
+  -webkit-appearance: none
+  -moz-appearance: none
+
+
+button,
+select
+  text-transform: none
+  cursor: pointer
+  -webkit-appearance: none
+  -moz-appearance: none
+
+
+select:-moz-focusring
+  color: transparent
+  text-shadow: 0 0 0 $black
+
+
+select::-moz-focus-inner
+  border: 0
+  outline: 0
+
+
+select::-ms-expand
+  display: none
+
+
+button[disabled],
+html input[disabled]
+  cursor: default
+
+
+button::-moz-focus-inner,
+input::-moz-focus-inner
+  border: 0
+  padding: 0
+
+
+input
+  line-height: normal
+
+
+input[type="checkbox"],
+input[type="radio"]
+  box-sizing: border-box
+  padding: 0
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+
+a[href^="#error:"]
+  background: $red
+  color: $white
+
+table
+  width: 100%
+  border-collapse: collapse
+
+.table-bordered
+  border: 1px solid $black
+
+  td
+    border: 1px solid $black
+    padding: 10px
+
+// Bugfix: IE 10 Windows 8 and Windows Phone8
+@-ms-viewport
+  width: device-width
+
+@-o-viewport
+  width: device-width
+
+@viewport
+  width: device-width

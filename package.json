@@ -1,0 +1,29 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "WEOOM",
+  "license": "ISC",
+  "devDependencies": {
+    "animate-sass": "^0.8.2",
+    "autoprefixer": "^7.2.6",
+    "grunt": "^1.0.3",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.4.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-postcss": "^0.9.0",
+    "grunt-sass": "^2.1.0",
+    "grunt-sass-import": "^0.2.2",
+    "load-grunt-tasks": "^3.5.2",
+    "node-sass": "^4.9.4"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "wow.js": "^1.2.2"
+  }
+}

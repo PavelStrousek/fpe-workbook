@@ -1,0 +1,32 @@
+//Default button
+$btnHeight: 48px
+$btnWidth: 143px
+$btnFontSize: 18px
+$btnRadius: 22px
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]
+  outline: 0
+  display: inline-block
+  min-width: $btnWidth
+  height: $btnHeight
+  line-height: 47px
+  color: $white
+  background: $default
+  text-align: center
+  font-weight: 700
+  text-decoration: none
+  white-space: nowrap
+  cursor: pointer
+  padding: 0 13px
+  border: 2px solid $default
+  border-radius: $btnRadius
+  font-size: $btnFontSize
+  +transition
+
+  &:hover
+    background: $white
+    color: $default

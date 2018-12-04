@@ -1,0 +1,6 @@
+RewriteEngine On
+ErrorDocument 404 http://localhost/saloon_roudna_web/404.php
+ErrorDocument 500 http://localhost/saloon_roudna_web/500.php
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
