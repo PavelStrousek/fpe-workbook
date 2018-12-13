@@ -18,7 +18,7 @@
           <div class="text-center">
             <h3>Oživení pojízdného robota</h3>
             <p>V dnešní hodině se naučíme řídit pojízdného robota, kterého jsme si sestavili v minulé hodině. Vezměte si Vašeho robota a pusťte se níže do řešení.</p>
-            <img src="assets/images/bok.png" alt="Lego robot">
+            <img src="assets/images/bok.png" alt="Lego robot" class="img-fullwidth mt-30 mb-30">
             <p>Náš sestavený robot. Všimněte si připojení motorů k portu D a A.</p>
           </div>
         </div>
@@ -32,9 +32,10 @@
       </section>
       <section role="region" class="section">
         <div class="container text-center">
-          <img src="assets/images/vstupni_porty.png" alt="Vstupní porty robota">
+          <img src="assets/images/vstupni_porty.png" alt="Vstupní porty robota" class="img-fullwidth">
         </div>
       </section>
+      <!--
       <section role="region" class="section bg-light-yellow text-center">
         <div class="container text-center">
           <h3>Učíme robota jezdit</h3>
@@ -58,6 +59,31 @@
           </div>
         </div>
       </section>
+-->
+      <section role="region" class="section bg-light-yellow text-center">
+        <div class="container">
+          <h3>Učíme robota jezdit</h3>
+          <p>Otevřete programovací prostředí EV3 a řešte jednotlivé úkoly uvedené v záložkách níže.</p>
+          <div class="topic">
+           <div class="open">
+              <h2 class="question">1. Úkol</h2>
+              <span class="faq-t"></span>
+           </div>
+           <div class="answer">
+             <img src="assets/images/idea.png" alt="žárovka - nápad">
+             <p>Co se stane, pokud motory připojíte k daným portům dle obrázku, program nahrajete do řídící jednotky a spustíte?</p>
+             <img src="assets/images/idea.png" alt="žárovka - nápad">
+             <p>Poznamenejte si, co si myslíte a následně program otestujte. Uhádli jste správné řešení?</p>
+             <img src="assets/images/ukol2_1.png" alt="Programovatelný bloky">
+             <p>TIP: Pro řízení robotů, kteří jsou poháněni dvěma motory se používá blok s názvem "Move Steering". - Naleznete ho v zelené záložce programových bloků.</p>
+             <p>
+               Upozornění: Nezapomeňte při programování zvolit správné výstupní porty řídící jednotky, ke kterým jsou motory připojeny (A - D).
+             </p>
+           </div>
+         </div>
+        </div>
+      </section
+
       <section role="region">
         <div class="container section text-center">
           <h3>Souhrnný úkol - střídáme rychlosti</h3>
@@ -88,10 +114,103 @@
         <div class="container">
           <h3>Náročnější úkol</h3>
           <p>Nyní si vyzkoušíme, jestli umíte znalosti z předchozích úkolů použít k řešení složitějšího problému.</p>
+          <img src="assets/images/idea.png" alt="žárovka - nápad">
+          <p>Vytvořte program, pomocí kterého robot ujede 5 otáček motoru, poté se otočí o 90° vpravo a následně ujede znovu 5 otáček motoru.</p>
+          <img src="assets/images/idea.png" alt="žárovka - nápad">
+        </div>
+      </section>
+
+      <section role="region" class="section text-center">
+        <div class="container">
+          <img src="assets/images/idea.png" alt="žárovka - nápad">
+          <h3>Úkol pro rychlé žáky</h3>
+          <p>Otevřete programovací prostředí EV3 a řešte jednotlivé úkoly uvedené v záložkách níže.</p>
+          <div class="row">
+            <div class="col-md-4">1. Úkol</div>
+            <div class="col-md-4">2. Úkol</div>
+            <div class="col-md-4">3. Úkol</div>
+          </div>
+        </div>
+
+      </section>
+
+      <section>
+
+<div class="topic">
+   <div class="open">
+      <h2 class="question">2. I have posted a complaint/comment, but it doesn’t appear on the website. Why? When my complaint will be posted?</h2>
+      <span class="faq-t"></span>
+   </div>
+   <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="topic">
+   <div class="open">
+      <h2 class="question">3. How can I edit a complaint I posted?</h2>
+      <span class="faq-t"></span>
+   </div>
+   <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="topic">
+   <div class="open">
+      <h2 class="question">4. How can i find out personal information of another user?</h2>
+      <span class="faq-t"></span>
+   </div>
+   <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="topic">
+   <div class="open">
+      <h2 class="question">5. How can i contact another user?</h2>
+      <span class="faq-t"></span>
+   </div>
+   <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="topic">
+   <div class="open">
+      <h2 class="question">2. I have posted a complaint/comment, but it doesn’t appear on the website. Why? When my complaint will be posted?</h2>
+      <span class="faq-t"></span>
+   </div>
+   <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="topic">
+   <div class="open">
+      <h2 class="question">3. How can I edit a complaint I posted?</h2>
+      <span class="faq-t"></span>
+   </div>
+   <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="topic">
+   <div class="open">
+      <h2 class="question">4. How can i find out personal information of another user?</h2>
+      <span class="faq-t"></span>
+   </div>
+   <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="topic">
+   <div class="open">
+      <h2 class="question">5. How can i contact another user?</h2>
+      <span class="faq-t"></span>
+   </div>
+   <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+      </section>
+
+      <section role="region" class="section text-center">
+        <div class="container">
+          <h3>Závěrečné ověření</h3>
+          <p>Myslíte si, že už základní ovládání robota zvládáte? Máme pro vás závěrečný úkol.</p>
+          <img src="assets/images/idea.png" alt="žárovka - nápad">
+          <p>Zajistěte, aby robot projel následující dráhu a během jízdy respektoval pokyny ohledně délky pohybu a uvedené rychlosti.</p>
+          <img src="assets/images/idea.png" alt="žárovka - nápad">
+          <img src="assets/images/ukol2_overeni.png" alt="žárovka - nápad">
         </div>
       </section>
 
     </main>
-    <?php include "partials/footer.php" ?>
+    <footer class="bg-light-green">
+
+    </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+    <script src='https://isotope.metafizzy.co/v1/jquery.isotope.min.js'></script>
+    <script src="assets/js/main.min.js"></script>
   </body>
 </html>

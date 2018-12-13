@@ -18,13 +18,24 @@
           <div class="text-center">
             <h3>Stavíme pojízdného robota</h3>
             <p>V dnešní hodině si sestavíme našeho prvního pojízdného robota a seznámíme se s ním.</p>
-            <img src="assets/images/bok.png" alt="Lego robot">
-            <img src="assets/images/open_icon.png" alt="Stažení manuálu">
-            <p>Manuál online</p>
-            <p>Návod pro stavbu robota</p>
-            <p>Jak si robota sestavit?</p>
-            <p>Vlevo najdete odkaz na stránku,<br> na které naleznete podrobný návod stavby.</p>
-            <p>Dejte se do toho!</p>
+            <img src="assets/images/bok.png" alt="Lego robot" class="img-fullwidth mt-30 mb-30">
+            <div class="text-left display-flex">
+              <div class="col-md-6 position-rel">
+                <img src="assets/images/open_icon.png" alt="Stažení manuálu" class="">
+                <div class="float-right ukol1_stazeni">
+                  <p>Manuál online</p>
+                  <p>Návod pro stavbu robota</p>
+                </div>
+              </div>
+              <div class="col-md-6 ukol1_border position-rel">
+                <div class="float-right">
+                  <p>Jak si robota sestavit?</p>
+                  <p>Vlevo najdete odkaz na stránku,<br> na které naleznete podrobný návod stavby.</p>
+                  <p>Dejte se do toho!</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
