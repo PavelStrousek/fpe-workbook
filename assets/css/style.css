@@ -475,6 +475,10 @@ table {
   padding-top: 25px;
 }
 
+.mr-10 {
+  margin-right: 10px;
+}
+
 .mr-15 {
   margin-right: 15px;
 }
@@ -485,6 +489,10 @@ table {
 
 .mr-65 {
   margin-right: 65px;
+}
+
+.ml-10 {
+  margin-left: 10px;
 }
 
 .ml-50 {
@@ -583,6 +591,14 @@ main {
 
 .text-white {
   color: #fff;
+}
+
+.text-grey {
+  color: #464646;
+}
+
+.text-red {
+  color: #C80000;
 }
 
 h1, h2, h3 {
@@ -744,7 +760,6 @@ input {
 }
 
 .topic {
-  padding: 20px;
   padding-top: 0px;
   padding-bottom: 0px;
   border-bottom: solid 1px #ebebeb;
@@ -754,6 +769,7 @@ input {
   cursor: pointer;
   display: block;
   padding: 0px;
+  text-align: left;
 }
 
 .open:hover {
@@ -761,7 +777,7 @@ input {
 }
 
 .expanded {
-  background-color: #FFC887;
+  background-color: #FFE0BB;
   transition: all .3s ease-in-out;
 }
 
@@ -769,6 +785,7 @@ input {
   padding-top: 30px;
   padding-right: 40px;
   padding-bottom: 20px;
+  padding-left: 30px;
   font-size: 18px;
   font-weight: 500;
   color: #000;
@@ -780,9 +797,8 @@ input {
   line-height: 26px;
   display: none;
   margin-bottom: 30px;
-  text-align: justify;
-  padding-left: 20px;
-  padding-right: 20px;
+  text-align: center;
+  padding: 20px 60px;
 }
 
 .faq-t {

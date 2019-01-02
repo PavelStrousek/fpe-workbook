@@ -66,23 +66,83 @@
           <p>Otevřete programovací prostředí EV3 a řešte jednotlivé úkoly uvedené v záložkách níže.</p>
           <div class="topic">
            <div class="open">
-              <h2 class="question">1. Úkol</h2>
+              <h2 class="question"><strong>1. Úkol</strong></h2>
               <span class="faq-t"></span>
            </div>
            <div class="answer">
-             <img src="assets/images/idea.png" alt="žárovka - nápad">
-             <p>Co se stane, pokud motory připojíte k daným portům dle obrázku, program nahrajete do řídící jednotky a spustíte?</p>
-             <img src="assets/images/idea.png" alt="žárovka - nápad">
-             <p>Poznamenejte si, co si myslíte a následně program otestujte. Uhádli jste správné řešení?</p>
-             <img src="assets/images/ukol2_1.png" alt="Programovatelný bloky">
-             <p>TIP: Pro řízení robotů, kteří jsou poháněni dvěma motory se používá blok s názvem "Move Steering". - Naleznete ho v zelené záložce programových bloků.</p>
+             <div class="display-flex">
+               <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="mr-10">
+               <div class="pt-25">
+                 <p>Co se stane, pokud motory připojíte k daným portům dle obrázku, <br>program nahrajete do řídící jednotky a spustíte?</p>
+               </div>
+               <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="ml-10">
+             </div>
+             <p class="mt-30">Poznamenejte si, co si myslíte a následně program otestujte. Uhádli jste správné řešení?</p>
+             <img src="assets/images/ukol2_1.png" alt="Programovatelný bloky" class="mt-30 mb-30">
+             <p class="text-grey">TIP: Pro řízení robotů, kteří jsou poháněni dvěma motory se používá blok s názvem "Move Steering". - Naleznete ho v zelené záložce programových bloků.</p>
              <p>
-               Upozornění: Nezapomeňte při programování zvolit správné výstupní porty řídící jednotky, ke kterým jsou motory připojeny (A - D).
+               <span class="text-red">Upozornění:</span> Nezapomeňte při programování zvolit správné výstupní porty řídící jednotky, ke kterým jsou motory připojeny (A - D).
              </p>
            </div>
          </div>
+
+         <div class="topic">
+          <div class="open">
+             <h2 class="question"><strong>2. Úkol</strong></h2>
+             <span class="faq-t"></span>
+          </div>
+
+          <div class="answer">
+            <div class="display-flex">
+              <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="mr-10">
+              <div class="pt-25">
+                <p>V kterém případě robot urazí delší vzdálenost? Dokážete najít odpověď jen ne základě obrázku? Jaký je rozdíl mezi oběma programy?</p>
+              </div>
+              <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="ml-10">
+            </div>
+            <p class="mt-30">Poznamenejte si odpověď a následně programy otestujte a porovnejte odpověď s výsledkem.</p>
+            <img src="assets/images/ukol2_2.png" alt="Programovatelný bloky" class="mt-30 mb-30">
+          </div>
         </div>
-      </section
+
+        <div class="topic">
+         <div class="open">
+            <h2 class="question"><strong>3. Úkol</strong></h2>
+            <span class="faq-t"></span>
+         </div>
+         <div class="answer">
+           <p>Pomocí programu na obrázku ujede robot určitou vzdálenost.</p>
+           <div class="display-flex">
+             <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="mr-10">
+             <div class="pt-25">
+               <p>Co musíte v programu změnit, aby ujel pouze polovinu této vzdálenosti? Vymyslete a otestujte.</p>
+             </div>
+             <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="ml-10">
+           </div>
+           <img src="assets/images/ukol2_3.png" alt="Programovatelný bloky" class="mt-30 mb-30">
+         </div>
+       </div>
+
+       <div class="topic">
+        <div class="open">
+           <h2 class="question"><strong>Hádanka</strong></h2>
+           <span class="faq-t"></span>
+        </div>
+        <div class="answer">
+          <div class="display-flex">
+            <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="mr-10">
+            <div class="pt-25">
+              <p>Nyní pro vás máme jednu hádanku. Proč se robot při spuštění tohoto programu nerozjede?</p>
+            </div>
+            <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="ml-10">
+          </div>
+          <img src="assets/images/ukol2_hadanka.png" alt="Programovatelný bloky" class="mt-30 mb-30">
+          <p class="text-grey">TIP: Zaměřte se na režimy programového bloku a ověřte, jak je robot v tomto případě řízen.</p>
+        </div>
+      </div>
+
+        </div>
+      </section>
 
       <section role="region">
         <div class="container section text-center">
