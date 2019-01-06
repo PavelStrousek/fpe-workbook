@@ -150,118 +150,186 @@
           <p>Vytvořte program, pomocí kterého robot pojede 4 otáčky motorů rychlostí 50 % a poté na dvě otáčky motorů zrychlí na 100 %-</p>
         </div>
       </section>
+
       <section role="region" class="section bg-light-yellow text-center">
         <h3>Učíme robota vzdálenost</h3>
         <p>Otevřete programovací prostředí EV3 a postupně řešte jednotlivé úkoly uvedené v záložkách níže.</p>
         <p>Protože již nejste úplní začátečníci, zkusíme, jak rozumíte programům. Vezměte si poznámkový blok a před řešením úloh zkuste vymyslet či odhadnout správnou odpověď.</p>
         <p>Váš úsudek poté otestujte vytvořeným programem.</p>
-        <div class="row">
-          <div class="col-md-2 col-md-offset-1">1. Úkol</div>
-          <div class="col-md-2">2. Úkol</div>
-          <div class="col-md-2">Hádanka</div>
-          <div class="col-md-2">Hádanka</div>
-          <div class="col-md-2">3. Úkol</div>
+        <div class="container">
+        <div class="topic">
+         <div class="open">
+            <h2 class="question"><strong>1. Úkol</strong></h2>
+            <span class="faq-t"></span>
+         </div>
+         <div class="answer">
+           <div class="display-flex">
+             <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="mr-10">
+             <div class="pt-25">
+               <p>Jaký je rozdíl mezi programy na obrázku?</p>
+             </div>
+             <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="ml-10">
+           </div>
+           <p>Pomocí kterého programu robot ujede delší vzdálenost? Zamyslete si, vaši odpověd si poznamenejte a pak otestujte, jestli byl váš úsudek správný.</p>
+           <img src="assets/images/ukol2_2.png" alt="">
+         </div>
+       </div>
+
+       <div class="topic">
+        <div class="open">
+           <h2 class="question"><strong>2. Úkol</strong></h2>
+           <span class="faq-t"></span>
         </div>
-        <div>
-          <img src="assets/images/idea.png" alt="žárovka - nápad">
-          <p>Jaký je rozdíl mezi programy na obrázku?</p>
-          <img src="assets/images/idea.png" alt="žárovka - nápad">
-          <p>Pomocí kterého programu robot ujede delší vzdálenost? Zamyslete si, vaši odpověd si poznamenejte a pak otestujte, jestli byl váš úsudek správný.</p>
-          <img src="assets/images/ukol2_2.png" alt="">
+        <div class="answer">
+          <div class="display-flex">
+            <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="mr-10">
+            <div class="pt-25">
+              <p>V kterém případě robot urazí delší vzdálenost? Dokážete najít odpověď jen ne základě obrázku? Jaký je rozdíl mezi oběma programy?</p>
+            </div>
+            <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="ml-10">
+          </div>
+          <p>Poznamenejte si odpověď a následně programy otestujte a porovnejte odpověď s výsledkem.</p>
+          <img src="assets/images/ukol2_2_2.png" alt="">
         </div>
+      </div>
+
+      <div class="topic">
+       <div class="open">
+          <h2 class="question"><strong>Hádanka</strong></h2>
+          <span class="faq-t"></span>
+       </div>
+       <div class="answer">
+         <div class="display-flex">
+           <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="mr-10">
+           <div class="pt-25">
+             <p>Kolik centimetrů robot ujede, pokud spustíme program na obrázku? Jakým způsobem by se to dalo zjistit i bez jeho spuštění?</p>
+           </div>
+           <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="ml-10">
+         </div>
+         <img src="assets/images/ukol2_2_hadanka.png" alt="">
+       </div>
+     </div>
+
+     <div class="topic">
+      <div class="open">
+         <h2 class="question"><strong>Hádanka</strong></h2>
+         <span class="faq-t"></span>
+      </div>
+      <div class="answer">
+        <div class="display-flex">
+          <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="mr-10">
+          <div class="pt-25">
+            <p>Jak zajistíte, aby stejnou vzdálenost, jako v předchozí hádance, ujel robot ve stupních?</p>
+          </div>
+          <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="ml-10">
+        </div>
+      </div>
+    </div>
+
+    <div class="topic">
+     <div class="open">
+        <h2 class="question"><strong>3. úkol</strong></h2>
+        <span class="faq-t"></span>
+     </div>
+     <div class="answer">
+       <div class="display-flex">
+         <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="mr-10">
+         <div class="pt-25">
+           <p>Vytvořte program, pomocí kterého robot ujede co nejpřesněji 30 centimetrů.</p>
+         </div>
+         <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="ml-10">
+       </div>
+     </div>
+   </div>
+
+       </div>
       </section>
+
       <section role="region" class="section text-center">
         <div class="container">
           <h3>Náročnější úkol</h3>
           <p>Nyní si vyzkoušíme, jestli umíte znalosti z předchozích úkolů použít k řešení složitějšího problému.</p>
-          <img src="assets/images/idea.png" alt="žárovka - nápad">
-          <p>Vytvořte program, pomocí kterého robot ujede 5 otáček motoru, poté se otočí o 90° vpravo a následně ujede znovu 5 otáček motoru.</p>
-          <img src="assets/images/idea.png" alt="žárovka - nápad">
+          <div class="display-flex">
+            <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="mr-10">
+            <div class="pt-25">
+              <p>Vytvořte program, pomocí kterého robot ujede 5 otáček motoru, poté se otočí o 90° vpravo a následně ujede znovu 5 otáček motoru.</p>
+            </div>
+            <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="ml-10">
+          </div>
         </div>
       </section>
 
-      <section role="region" class="section text-center">
+      <section role="region" class="section text-center bg-light-green">
         <div class="container">
           <img src="assets/images/idea.png" alt="žárovka - nápad">
           <h3>Úkol pro rychlé žáky</h3>
           <p>Otevřete programovací prostředí EV3 a řešte jednotlivé úkoly uvedené v záložkách níže.</p>
-          <div class="row">
-            <div class="col-md-4">1. Úkol</div>
-            <div class="col-md-4">2. Úkol</div>
-            <div class="col-md-4">3. Úkol</div>
+          <div class="topic">
+           <div class="open">
+              <h2 class="question"><strong>1. Úkol</strong></h2>
+              <span class="faq-t"></span>
+           </div>
+           <div class="answer">
+             <div class="display-flex">
+               <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="mr-10">
+               <div class="pt-25">
+                 <p>Zařiďte, aby robot ujel 15 cm, pak na 3 vteřiny zastavil a pak se znovu rozjel a ujel 15 cm.</p>
+               </div>
+               <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="ml-10">
+             </div>
+             <p class="text-grey">TIP: Pro řízení robotů, kteří jsou poháněni dvěma motory se používá blok s názvem "Move Steering". - Naleznete ho v zelené záložce programových bloků.</p>
+           </div>
+         </div>
+
+         <div class="topic">
+          <div class="open">
+             <h2 class="question"><strong>2. Úkol</strong></h2>
+             <span class="faq-t"></span>
+          </div>
+          <div class="answer">
+            <div class="display-flex">
+              <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="mr-10">
+              <div class="pt-25">
+                <p>Zařiďte, aby robot ujel 30 cm, následně zastavil a zpět na počáteční pozici zacouval.</p>
+              </div>
+              <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="ml-10">
+            </div>
           </div>
         </div>
 
-      </section>
+        <div class="topic">
+         <div class="open">
+            <h2 class="question"><strong>3. Úkol</strong></h2>
+            <span class="faq-t"></span>
+         </div>
+         <div class="answer">
+           <div class="display-flex">
+             <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="mr-10">
+             <div class="pt-25">
+               <p>Zařiďte, aby robot ujel 30 cm, otočil se o 180° a dojel znovu zpět na výchozí pozici.</p>
+             </div>
+             <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="ml-10">
+           </div>
+         </div>
+       </div>
 
-      <section>
+        </div>
 
-<div class="topic">
-   <div class="open">
-      <h2 class="question">2. I have posted a complaint/comment, but it doesn’t appear on the website. Why? When my complaint will be posted?</h2>
-      <span class="faq-t"></span>
-   </div>
-   <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-<div class="topic">
-   <div class="open">
-      <h2 class="question">3. How can I edit a complaint I posted?</h2>
-      <span class="faq-t"></span>
-   </div>
-   <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-<div class="topic">
-   <div class="open">
-      <h2 class="question">4. How can i find out personal information of another user?</h2>
-      <span class="faq-t"></span>
-   </div>
-   <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-<div class="topic">
-   <div class="open">
-      <h2 class="question">5. How can i contact another user?</h2>
-      <span class="faq-t"></span>
-   </div>
-   <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-<div class="topic">
-   <div class="open">
-      <h2 class="question">2. I have posted a complaint/comment, but it doesn’t appear on the website. Why? When my complaint will be posted?</h2>
-      <span class="faq-t"></span>
-   </div>
-   <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-<div class="topic">
-   <div class="open">
-      <h2 class="question">3. How can I edit a complaint I posted?</h2>
-      <span class="faq-t"></span>
-   </div>
-   <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-<div class="topic">
-   <div class="open">
-      <h2 class="question">4. How can i find out personal information of another user?</h2>
-      <span class="faq-t"></span>
-   </div>
-   <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-<div class="topic">
-   <div class="open">
-      <h2 class="question">5. How can i contact another user?</h2>
-      <span class="faq-t"></span>
-   </div>
-   <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
       </section>
 
       <section role="region" class="section text-center">
         <div class="container">
           <h3>Závěrečné ověření</h3>
           <p>Myslíte si, že už základní ovládání robota zvládáte? Máme pro vás závěrečný úkol.</p>
-          <img src="assets/images/idea.png" alt="žárovka - nápad">
-          <p>Zajistěte, aby robot projel následující dráhu a během jízdy respektoval pokyny ohledně délky pohybu a uvedené rychlosti.</p>
-          <img src="assets/images/idea.png" alt="žárovka - nápad">
-          <img src="assets/images/ukol2_overeni.png" alt="žárovka - nápad">
+          <div class="display-flex">
+            <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="mr-10">
+            <div class="pt-25">
+              <p>Zajistěte, aby robot projel následující dráhu a během jízdy respektoval pokyny ohledně délky pohybu a uvedené rychlosti.</p>
+            </div>
+            <img src="assets/images/idea.png" alt="žárovka - nápad" style="width: 53px;height: 53px;" class="ml-10">
+          </div>
+        </div>
+          <img src="assets/images/ukol2_overeni.png" alt="žárovka - nápad" class="mt-30">
         </div>
       </section>
 
