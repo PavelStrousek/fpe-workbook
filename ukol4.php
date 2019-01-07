@@ -150,15 +150,99 @@
               <p>Které z nich jste pro opravu využili?</p>
             </div>
           </div>
+
+          <div class="topic">
+           <div class="open">
+              <h2 class="question"><strong>TIP: Nové bloky</strong></h2>
+              <span class="faq-t"></span>
+           </div>
+           <div class="answer">
+             <p>TIP: Bloky můžete buďto zkopírovat nebo vybrat v dolní části okna. Zelená sekce sdružuje všechny základní výstupní bloky, tedy bloky, které provádí navenek viditelnou činnost (např. zvuky, vykreslení na displeji, otáčení motorů a jiné).</p>
+             <img src="assets/images/ukol4_tip.png" alt="">
+           </div>
+         </div>
         </div>
 
       </section>
 
-      <section role="region" class="section text-center bg-light-green">
+      <section role="region" class="section bg-light-yellow text-center">
+        <h3>Hrátky s displejem</h3>
+        <p>Naučili jste se ovládat zvuk, nyní se podíváme na displej. Kde se nachází asi říkat nemusíme, zajímavé však bude, jak se ovládá.</p>
+      </section>
+
+      <section role="region" class="section text-center">
         <div class="container">
-          <h3>Zbyla Vám ještě chvilka času?</h3>
-          <p>Vymyslete vlastní trasu městem a trasu naprogramujte.</p>
-          <a href="" class="button">VYZKOUŠEJTE</a>
+          <div class="row">
+            <div class="text-left display-flex">
+              <div class="col-md-6 position-rel">
+                <img src="assets/images/open_icon.png" alt="Stažení manuálu" class="">
+                <div class="float-right ukol1_stazeni">
+                  <p>Stáhni si</p>
+                  <p>Displej 1</p>
+                </div>
+              </div>
+              <div class="col-md-6 ukol1_border position-rel">
+                <div class="float-right">
+                  <p>Stáhněte si program a otestujte, co dělá.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section role="region" class="section text-center bg-light-yellow">
+        <div class="container">
+            <h3>Zjišťujeme, co program dělá</h3>
+            <div class="topic">
+             <div class="open">
+                <h2 class="question"><strong>Program</strong></h2>
+                <span class="faq-t"></span>
+             </div>
+             <div class="answer text-left">
+               <ul>
+                 <li>1. Napiš, co program dělá. </li>
+                 <li>2. Napište, co očekáváte, že se stane, pokud odstraníte blok zvuku. Nevadí, když se zmýlíte. Důležité je se zamyslet. </li>
+                 <li>3. Předpoklad otestujte. Stalo se to, co jste si mysleli?</li>
+               </ul>
+             </div>
+           </div>
+
+           <div class="topic">
+            <div class="open">
+               <h2 class="question"><strong>Ověření</strong></h2>
+               <span class="faq-t"></span>
+            </div>
+            <div class="answer">
+              <p>Proč se na displeji „nic“ nezobrazuje?</p>
+              <img src="assets/images/ukol4_overeniy.png" alt="">
+              <p>Jaké vlastnosti měním pomocí:<br>1., 2., 3. a 4. tlačítka?</p>
+              <p>Které z nich jste pro opravu využili?</p>
+            </div>
+          </div>
+
+          <div class="topic">
+           <div class="open">
+              <h2 class="question"><strong>Vysvělení</strong></h2>
+              <span class="faq-t"></span>
+           </div>
+           <div class="answer">
+             <p>Program se skládá ze sledu příkazů, které jsou postupně (a někdy i souběžně) vykonávány. Po vykonání všech příkazů program skončí a řízení se ujme operační systém. Program tedy skončil a displej se přepsal.</p>
+             <p>Tvůj program se skládá jen z jednoho bloku, který se vykonal a program následně skončil. Došlo tedy k přepsání výstupu displeje. Pro ovlivnění délky běhu programu můžeš využít i blok s čekáním „Wait“.</p>
+             <img src="assets/images/ukol4_tip.png" alt="">
+           </div>
+         </div>
+        </div>
+
+      </section>
+
+      <section role="region" class="section text-center">
+        <div class="container">
+          <h3>Upravujeme program</h3>
+          <p>1. Uprav program tak, aby text zůstal na displeji zobrazený po 3 vteřiny.</p>
+          <p>2. Dokážete zobrazovat text postupně po písmenkách (L, LE, LEG, LEGO)? Program vytvořte a vyzkoušejte.</p>
+          <p>3. Poradíte si i se složitějším výpisem (obrázek). TIP: Složitější úlohy je vhodné řešit po menších částech. Zkus např. nejdřív text zarovnat na střed a např. až poté řešit jeho pozici či zarovnání.</p>
+          <p>4. Nyní si na závěr pojmenujte robota a nechte jeho jméno zajímavým způsobem vypsat na displej.</p>
         </div>
       </section>
 
