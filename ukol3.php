@@ -14,7 +14,7 @@
     <?php include "partials/header.php" ?>
     <main role="main">
       <section role="region" class="section text-center">
-        <div class="containter">
+        <div class="container">
           <h2>Robot ve městě</h2>
           <p>Dnes využijeme robota sestaveného v předchozí hodině.Vaším úkolem bude zajistit úspěšné projetí robota městem na základě dílčích úkolů uvedených níže.</p>
           <div class="row">
