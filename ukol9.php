@@ -14,7 +14,7 @@
     <?php include "partials/header.php" ?>
     <main role="main">
       <section role="region" class="section text-center">
-        <div class="containter">
+        <div class="container">
           <h3>Inteligentní pojízdný robot</h3>
           <p>
             V minulé hodině jste si určitě všimli, že robot byl při jízdě po městě poměrně nepřesný. Často nedorazil úplně přesně na požadované místo.
@@ -97,7 +97,7 @@
       </section>
 
       <section role="region" class="section text-center">
-        <div class="containter">
+        <div class="container">
           <h3>Aktivita - jednoduchý pohyb po čáře</h3>
           <p>
             Doplňte obě části podmínky na obrázku tak, aby pomocí programu robot vykonával kmitavý pohyb po čáře.
