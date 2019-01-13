@@ -24,7 +24,6 @@
           <li><a href="ukol7.php" class="text-black">7. Automatická závora</a></li>
           <li><a href="ukol8.php" class="text-black">8. Detekce překážky - tempomat</a></li>
           <li><a href="ukol9.php" class="text-black">9. Inteligentní robot</a></li>
-          <li><a href="ukol9.php" class="text-black">9. Inteligentní robot</a></li>
           <li><a href="ukol10.php" class="text-black">10. Parkovací asistent</a></li>
           <li><a href="ukol11.php" class="text-black">11. Hra</a></li>
         </ul>
