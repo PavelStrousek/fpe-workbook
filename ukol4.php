@@ -14,7 +14,7 @@
     <?php include "partials/header.php" ?>
     <main role="main">
       <section role="region" class="section text-center">
-        <div class="containter">
+        <div class="container">
           <h2>Řídící jednotka</h2>
           <p>
             V dnešní hodině si dáme trochu odpočinek od ježdění a budeme "kouzlit" se zvukem a grafikou.
@@ -25,7 +25,7 @@
           <p>
             Vezměte si Váš model robotického auta a opatrně od něj odpojte řídící jednotku. Zbytek modelu odložte. Nebudete ho dnes potřebovat.
           </p>
-          <div class="row">
+          <div class="row mt-30">
             <div class="col-md-5 col-md-offset-1">
               <img src="assets/images/ukol4_legostorm.png" alt="Řídící jednotka Legostorm">
             </div>
