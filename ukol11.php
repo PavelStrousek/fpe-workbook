@@ -14,19 +14,19 @@
     <?php include "partials/header.php" ?>
     <main role="main">
       <section role="region" class="section text-center">
-        <div class="containter">
+        <div class="container">
           <h3>Postřehová hra</h3>
-          <p>
+          <p class="mt-15">
             Už nebudeme dělat jen vozítka, ale zkusíme si vytvořit i nějakou jednoduchou hru, ve které pak mezi sebou můžete soutěžit.
           </p>
           <p>
             Nejen, že se zlepšíš v programování, ale pak protrénuješ i svůj postřeh.
           </p>
-          <div class="row">
-            <div class="col-md-5 col-md-offset-1">
+          <div class="row mt-30">
+            <div class="col-md-4 col-md-offset-1">
               <img src="assets/images/ukol11_model.png" alt="Stavba modelu">
             </div>
-            <div class="col-md-5">
+            <div class="col-md-7">
               <div class="text-left">
               <h3>Stavba modelu</h3>
               <p>Model pro hru je velmi jednoduchý.<br>

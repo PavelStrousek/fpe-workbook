@@ -16,7 +16,7 @@
       <section role="region" class="section text-center">
         <div class="container">
           <h3>Inteligentní pojízdný robot</h3>
-          <p>
+          <p class="mt-15">
             V minulé hodině jste si určitě všimli, že robot byl při jízdě po městě poměrně nepřesný. Často nedorazil úplně přesně na požadované místo.
           </p>
           <p>
@@ -25,7 +25,7 @@
           <p>
             Jak cestu najde? Nakreslíme mu ji! Všimněte si, že na zemi v učebně už je připravena černá čára. Naším úkolem v této hodině bude vytvořit program, díky kterému bude robot tuto čáru sledovat.
           </p>
-          <div class="row">
+          <div class="row mt-30">
             <div class="col-md-5 col-md-offset-1">
               <img src="assets/images/ukol9_senzor.png" alt="Barevný senzor">
             </div>
