@@ -38,7 +38,15 @@
         <div class="container text-center">
           <h3>Sestavení a otevření závor</h3>
           <p>Otázka: Jak se závora ve většině obchodních center otevírá? <br>Co určuje, že se závora otevře a co že se zavře?</p>
-          <img src="assets/images/ukol6_robot.png" alt="Vstupní porty robota" class="img-fullwidth">
+          <div class="row">
+            <div class="col-md-3"><img src="assets/images/ukol6_robot.png" alt="Vstupní porty robota" ></div>
+            <div class="col-md-3"><img src="assets/images/ukol6_robot2.png" alt="Vstupní porty robota" ></div>
+            <div class="col-md-3"><img src="assets/images/ukol6_robot3.png" alt="Vstupní porty robota" ></div>
+            <div class="col-md-3"><img src="assets/images/ukol6_robot4.png" alt="Vstupní porty robota" ></div>
+          </div>
+
+
+
         </div>
       </section>
 
@@ -117,8 +125,13 @@ Který z uvedených bloků motorů použiješ?</p>
 
       <section role="region">
         <div class="container section text-center">
-          <img src="assets/images/ukol6_slider2_1.png" alt="Programovatelný bloky" class="mt-30 mb-30">
-        </div>
+          <div class="row">
+            <div class="col-md-3"><img src="assets/images/ukol6_slider2_1.png" alt="Programovatelné bloky"></div>
+            <div class="col-md-3"><img src="assets/images/ukol6_slider2_2.png" alt="Programovatelné bloky"></div>
+            <div class="col-md-3"><img src="assets/images/ukol6_slider2_3.png" alt="Programovatelné bloky"></div>
+            <div class="col-md-3"><img src="assets/images/ukol6_slider2_4.png" alt="Programovatelné bloky"></div>
+          </div>
+      </div>
       </section>
 
     </main>
