@@ -14,7 +14,7 @@
     <?php include "partials/header.php" ?>
     <main role="main">
       <section role="region" class="section text-center">
-        <div class="containter">
+        <div class="container">
           <h3>Parkovací asistent</h3>
           <p>
             V této hodině navážema na předchozí aktivity s ultrazvukovým senzorem. Využijeme tento senzor k vyhledání dostatečného místa na parkování a následnému zajetí do řady vozidel.
@@ -76,7 +76,7 @@
       </section>
 
       <section role="region" class="section text-center">
-        <div class="containter">
+        <div class="container">
           <h3>Tvorba vlastního bloku</h3>
           <p>
             Program, který vytváříme, bude ve výsledku poměrně rozsáhlý. Pro jeho zpřehlednění si můžeme vytvořit vlastní bloky. Stačí si označit všechny bloky, které do něj chcete zahrnout a v horním menu vybrat položku "Tools" a následně "My Block Builder".
@@ -129,9 +129,11 @@
       </section>
 
       <section role="region" class="section text-center">
-        <h3>Rozšiřující aktivita pro rychlé žáky</h3>
-        <p>Možná jste během diskuse došli k tomu, že předchozí řešení by nebylo příliš správné. Může totiž dojít k tomu, že na místě, které robot vyhodnotil jako volné bude zaparkovaná motorka, umístěná popelnice nebo sloup veřejného osvětlení. V aktivitě níže se tedy naučíme, jak tento problém vyřešit.</p>
-        <img src="assets/images/ukol10_rozsireni.png" alt="Rozšiřující aktivita">
+        <div class="container">
+          <h3>Rozšiřující aktivita pro rychlé žáky</h3>
+          <p>Možná jste během diskuse došli k tomu, že předchozí řešení by nebylo příliš správné. Může totiž dojít k tomu, že na místě, které robot vyhodnotil jako volné bude zaparkovaná motorka, umístěná popelnice nebo sloup veřejného osvětlení. V aktivitě níže se tedy naučíme, jak tento problém vyřešit.</p>
+          <img src="assets/images/ukol10_rozsireni.png" alt="Rozšiřující aktivita" class="mt-30">
+        </div>
       </section>
 
       <section role="region" class="section text-center bg-light-yellow">
