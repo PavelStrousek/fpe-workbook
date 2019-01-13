@@ -16,10 +16,10 @@
       <section role="region" class="section bg-main">
         <div class="container">
           <div class="row display-flex">
-            <div class="col-md-6 text-right">
+            <div class="col-xs-12 col-sm-12 col-md-6 text-right">
               <img src="assets/images/robot.png" alt="Lego stavebnice">
             </div>
-            <div class="col-md-6 text-center">
+            <div class="col-xs-12 col-sm 12 col-md-6 text-center">
               <h1 class="mb-15">Učebnice LEGO robotiky</h1>
               <p class="mt-15">PhDr. Tomáš Jakeš, Ph.D.</p>
               <p>Mgr. Jan Baťko</p>

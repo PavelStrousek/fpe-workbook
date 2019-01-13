@@ -18,6 +18,14 @@ header
     transform: translateX(100%)
     overflow-y: scroll
 
+    @media(max-width:665px)
+      line-height: 42px
+      text-align: left
+      p
+        margin-top: 18px
+      img
+        margin-top: 15px
+
 .active
   nav
     transform: translateX(0)
@@ -26,4 +34,12 @@ header
     display: none
 .b_registration
   @media(max-width: 360px)
+    display: none
+
+.prihlaseni
+  @media(max-width: 665px)
+    display: none
+
+.prihlaseni2
+  @media(min-width: 665px)
     display: none

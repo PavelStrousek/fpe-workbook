@@ -18,8 +18,16 @@ $(document).ready(function() {
       $('header').addClass('active');
     })
 
+    $('.menu-box').click(function() {
+      $('body').addClass('active_body');
+    })
+
     $('.menu-close').click(function() {
       $('header').removeClass('active');
+    })
+
+    $('.menu-close').click(function() {
+      $('body').removeClass('active_body');
     })
 
       $(".open").click( function () {

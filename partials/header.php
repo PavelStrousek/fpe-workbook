@@ -5,16 +5,18 @@
         <a href="./" class="logo" title="Lego učebnice"><img src="assets/images/robot_icon.png" alt="Logo"></a>
       </div>
       <div class="col-md-9 text-right">
-        <a href="login.php" class="button mr-15 b_login">Přihlášení</a>
-        <a href="login.php#registration" class="button mr-65 b_registration">Registrace</a>
+        <a href="login.php" class="button mr-15 b_login prihlaseni">Přihlášení</a>
+        <a href="login.php#registration" class="button mr-65 b_registration prihlaseni">Registrace</a>
         <div class="menu-box" aria-label="Menu">
           <div class="menu-box__item" aria-hidden="true"></div>
         </div>
       </div>
       <nav class="text-center" role="navigation">
         <ul>
-          <div class="menu-close"></div>
-          <p class=""><strong>LEKCE</strong></p>
+          <span>
+          <div class="menu-close"><img src="assets/images/close.png" alt=""></div>
+          <p style="height: 72px"><strong>LEKCE</strong></p>
+          </span>
           <li><a href="ukol1.php" class="text-black">1. Stavíme pojízdného robota</a></li>
           <li><a href="ukol2.php" class="text-black">2. Oživení robota</a></li>
           <li><a href="ukol3.php" class="text-black">3. Robot ve městě</a></li>
@@ -26,6 +28,7 @@
           <li><a href="ukol9.php" class="text-black">9. Inteligentní robot</a></li>
           <li><a href="ukol10.php" class="text-black">10. Parkovací asistent</a></li>
           <li><a href="ukol11.php" class="text-black">11. Hra</a></li>
+          <a href="login.php" class="button mt-15 prihlaseni2">Přihlášení</a>
         </ul>
       </nav>
     </div>
