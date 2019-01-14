@@ -16,7 +16,7 @@
       <section role="region" class="section text-center">
         <div class="container">
           <h2>Řídící jednotka</h2>
-          <p>
+          <p class="mt-15">
             V dnešní hodině si dáme trochu odpočinek od ježdění a budeme "kouzlit" se zvukem a grafikou.
           </p>
           <p>
@@ -31,7 +31,7 @@
             </div>
             <div class="col-md-5">
               <div class="text-left">
-              <h3>Řídicí jednotka LEGO Mindstorms EV3</h3>
+              <h3 class="mt-60">Řídicí jednotka LEGO Mindstorms EV3</h3>
                 <p>Jedna z komponent, kterou jednotka obsahuje je mikroprocesor.</p>
               </div>
             </div>

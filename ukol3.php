@@ -16,8 +16,8 @@
       <section role="region" class="section text-center">
         <div class="container">
           <h2>Robot ve městě</h2>
-          <p>Dnes využijeme robota sestaveného v předchozí hodině.Vaším úkolem bude zajistit úspěšné projetí robota městem na základě dílčích úkolů uvedených níže.</p>
-          <div class="row">
+          <p class="mt-15">Dnes využijeme robota sestaveného v předchozí hodině.Vaším úkolem bude zajistit úspěšné projetí robota městem na základě dílčích úkolů uvedených níže.</p>
+          <div class="row mt-30">
             <div class="col-md-5 col-md-offset-1">
               <img src="assets/images/ukol3_mesto.png" alt="Mapa města">
             </div>

@@ -16,10 +16,10 @@
       <section role="region" class="section text-center">
         <div class="container">
           <h3>Parkovací asistent</h3>
-          <p>
+          <p class="mt-15">
             V této hodině navážema na předchozí aktivity s ultrazvukovým senzorem. Využijeme tento senzor k vyhledání dostatečného místa na parkování a následnému zajetí do řady vozidel.
           </p>
-          <div class="row">
+          <div class="row mt-30">
             <div class="col-md-5 col-md-offset-1">
               <img src="assets/images/ukol10_parkovaci_asistent.png" alt="Parkovací asistent">
             </div>
