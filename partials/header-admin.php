@@ -2,11 +2,11 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-5 col-md-3">
-        <a href="./" class="logo" title="Lego učebnice"><img src="assets/images/robot_icon.png" alt="Logo"></a>
+        <a href="./" class="logo" title="Lego učebnice"><img src="../assets/images/robot_icon.png" alt="Logo"></a>
       </div>
       <div class="col-md-9 text-right">
-        <a href="login.php" class="button mr-15 b_login prihlaseni">Přihlášení</a>
-        <a href="registrace.php" class="button mr-65 b_registration prihlaseni">Registrace</a>
+
+        <a href="registrace.php" class="button mr-65 b_registration prihlaseni">Odhlášení</a>
         <div class="menu-box" aria-label="Menu">
           <div class="menu-box__item" aria-hidden="true"></div>
         </div>
@@ -14,7 +14,7 @@
       <nav class="text-center" role="navigation">
         <ul>
           <span>
-          <div class="menu-close"><img src="assets/images/close.png" alt=""></div>
+          <div class="menu-close"><img src="../assets/images/close.png" alt=""></div>
           <p style="height: 72px"><strong>LEKCE</strong></p>
           </span>
           <li><a href="ukol1.php" class="text-black">1. Stavíme pojízdného robota</a></li>
