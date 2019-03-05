@@ -20,7 +20,7 @@
     "grunt-sass": "^2.1.0",
     "grunt-sass-import": "^0.2.2",
     "load-grunt-tasks": "^3.5.2",
-    "node-sass": "^4.9.4"
+    "node-sass": "^4.11.0"
   },
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
