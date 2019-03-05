@@ -89,13 +89,90 @@
               <input name="new_description" type="text" value="" />
               <input type="submit" value="Změnit popis kurzu" />
             </form>
-<form method="POST" action="http://hana.fpe.zcu.cz/routes/course/updateName.php">
-  id course: <input name="course_id" type="number" value="" />
-  zmena jmena course: <input name="new_name" type="text" value="" />
-  <input type="submit" value="zmenit" />
-</form>
+            <form method="POST" action="http://hana.fpe.zcu.cz/routes/course/updateName.php">
+              <label for="course_id">ID kurzu</label>
+              <input name="course_id" type="number" value="" />
+              <label for="new_name">Změna jména kurzu</label>
+              <input name="new_name" type="text" value="" />
+              <input type="submit" value="Změnit jméno kurzu" />
+            </form>
           </div>
         </div>
+      </section>
+
+      <section role="region" class="section">
+        <div class="container">
+          <div class="topic">
+           <div class="open">
+              <h2 class="question"><strong>Náhled - učitelé</strong></h2>
+              <span class="faq-t" onclick="showTeachers()"></span>
+           </div>
+           <div class="answer">
+             <table>
+               <tr>
+                 <th width="25%">ID</th>
+                 <th width="25%">Jméno</th>
+                 <th width="25%">Email</th>
+                 <th width="25%">Publisher</th>
+               </tr>
+               <tr>
+                 <td width="25%">1</td>
+                 <td width="25%">xxx</td>
+                 <td width="25%">xxx</td>
+                 <td width="25%">ano</td>
+               </tr>
+             </table>
+           </div>
+         </div>
+
+
+           <div class="topic">
+            <div class="open">
+               <h2 class="question"><strong>Náhled - třídy</strong></h2>
+               <span class="faq-t" onclick="showClasses()"></span>
+            </div>
+            <div class="answer">
+              <table>
+                <tr>
+                  <th width="25%">ID</th>
+                  <th width="25%">Jméno</th>
+                  <th width="25%">ID Učitel</th>
+                  <th width="25%">ID Kurz</th>
+                </tr>
+                <tr>
+                  <td width="25%">1</td>
+                  <td width="25%">xxx</td>
+                  <td width="25%">3</td>
+                  <td width="25%">10</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+
+         <div class="topic">
+          <div class="open">
+             <h2 class="question"><strong>Náhled - kurz</strong></h2>
+             <span class="faq-t" onclick="showCourses()"></span>
+          </div>
+          <div class="answer">
+            <table>
+              <tr>
+                <th width="25%">ID</th>
+                <th width="25%">Jméno</th>
+                <th width="25%">Popis</th>
+                <th width="25%">ID Učitel</th>
+              </tr>
+              <tr>
+                <td width="25%">16</td>
+                <td width="25%">xxx</td>
+                <td width="25%">Ovládání závory</td>
+                <td width="25%">10</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
       </section>
     </main>
     <?php include "../partials/footer-admin.php" ?>
