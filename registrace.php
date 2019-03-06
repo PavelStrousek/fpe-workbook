@@ -18,9 +18,9 @@
           <div class="row">
             <div class="col-md-4 col-md-offset-4">
               <h3>Registrace - učitel</h3>
-              <form action="/login" method="post">
+              <form action="/login" method="post" action="http://hana.fpe.zcu.cz/routes/teacher/registrate.php">
                 <label for="frm-login-name" class="text-left">Uživatelské jméno</label>
-                <input type="text" name="email" id="frm-login-name" required="" data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;This field is required.&quot;}]">
+                <input type="text" name="name" id="frm-login-name" required="" data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;This field is required.&quot;}]">
                 <label for="frm-registration-email">Email</label>
                 <input type="text" name="email" id="frm-registration-email" required="" data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;This field is required.&quot;}]">
                 <input type="submit" name="login" value="Registrovat">
