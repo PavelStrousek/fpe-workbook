@@ -70,7 +70,7 @@
           </div>
         </div>
       </section>
-      
+
     </main>
     <?php include "../partials/footer-admin.php" ?>
   </body>
