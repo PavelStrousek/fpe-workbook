@@ -33,11 +33,15 @@
       <section role="region" class="section">
         <div class="container text-center">
           <div class="col-md-8 col-md-offset-2">
-            <h3>Nastavení group</h3>
+            <h3 class="mt-20">Nastavení group</h3>
+            <p><strong>Group jméno:</strong></p>
+            <div><p>ahoj</p></div>
+            <p><strong>ID třídy:</strong></p>
+            <div class="mb-20"><p>ahoj</p></div>
             <form action="/login" method="post">
               <label for="frm-registration-name">Najít group</label>
               <input name="group_id" id="groupID" type="number" />
-<input type="submit" onclick="getGroupInfoByIdForTeacher(document.getElementById('groupID').value)" name="najit" value="Najít">
+              <input type="submit" onclick="getGroupInfoByIdForTeacher(document.getElementById('groupID').value)" name="najit" value="Najít">
             </form>
 
               <form method="POST" action="http://hana.fpe.zcu.cz/routes/group/deleteByTeacher.php">
