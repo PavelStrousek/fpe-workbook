@@ -18,10 +18,14 @@
           <div class="row">
             <div class="col-md-4 col-md-offset-4 text-center">
               <h3>Učitel</h3>
-              <p>Jméno</p>
-              <p>Email</p>
-              <p>ID</p>
-              <p>Publisher</p>
+              <p>Jméno:</p>
+                <div id="teacherName"></div>
+              <p>Email:</p>
+                <div id="teacherEmail"></div>
+              <p>ID:</p>
+                <div id="teacherID"></div>
+              <p>Publisher:</p>
+                <div id="teacherPublisher"></div>
             </div>
           </div>
         </div>
@@ -50,19 +54,25 @@
           <div class="col-md-8 col-md-offset-2 text-center">
             <h3>Nastavení účtu</h3>
             <form method="POST" action="http://hana.fpe.zcu.cz/routes/teacher/updateName.php">
-            <label for="new_name">Změna jména</label>
-            <input name="new_name" type="text" />
+              <input name="success_url" type="hidden" value="http://localhost/fpe-workbook-master/admin/nastaveni-uctu-ucitel.php" />
+              <input name="error_url" type="hidden" value="http://localhost/fpe-workbook-master/" />
+              <label for="new_name">Změna jména</label>
+              <input name="new_name" type="text" />
               <input type="submit" value="Změnit" />
             </form>
             <form method="POST" action="http://hana.fpe.zcu.cz/routes/teacher/updateEmail.php">
+              <input name="success_url" type="hidden" value="http://localhost/fpe-workbook-master/admin/nastaveni-uctu-ucitel.php" />
+              <input name="error_url" type="hidden" value="http://localhost/fpe-workbook-master/" />
               <label for="new_email">Změna emailu</label>
               <input name="new_email" type="email" />
               <input type="submit" value="Změnit" />
             </form>
             <form method="POST" action="http://hana.fpe.zcu.cz/routes/teacher/updatePassword.php.php">
-            <label for="new_password">Změna emailu</label>
-            <input name="new_password" type="password" />
-            <input type="submit" value="Změnit" />
+              <input name="success_url" type="hidden" value="http://localhost/fpe-workbook-master/admin/nastaveni-uctu-ucitel.php" />
+              <input name="error_url" type="hidden" value="http://localhost/fpe-workbook-master/" />
+              <label for="new_password">Změna hesla</label>
+              <input name="new_password" type="password" />
+              <input type="submit" value="Změnit" />
             </form>
           </div>
         </div>
@@ -72,17 +82,23 @@
           <div class="col-md-8 col-md-offset-2 text-center">
             <h3>Nastavení kurzu</h3>
             <form method="POST" action="http://hana.fpe.zcu.cz/routes/course/create.php">
+              <input name="success_url" type="hidden" value="http://localhost/fpe-workbook-master/admin/nastaveni-uctu-ucitel.php" />
+              <input name="error_url" type="hidden" value="http://localhost/fpe-workbook-master/" />
               <label for="name">Název kurzu</label>
               <input name="name" type="text" value="" />
               <input type="submit" value="Vytvořit kurz" />
             </form>
             <form method="POST" action="http://hana.fpe.zcu.cz/routes/course/delete.php">
+              <input name="success_url" type="hidden" value="http://localhost/fpe-workbook-master/admin/nastaveni-uctu-ucitel.php" />
+              <input name="error_url" type="hidden" value="http://localhost/fpe-workbook-master/" />
               <label for="course_id">ID kurzu</label>
               <input name="course_id" type="number" value="" />
               <input type="submit" value="Smazat kurz" />
             </form>
 
             <form method="POST" action="http://hana.fpe.zcu.cz/routes/course/updateDescription.php">
+              <input name="success_url" type="hidden" value="http://localhost/fpe-workbook-master/admin/nastaveni-uctu-ucitel.php" />
+              <input name="error_url" type="hidden" value="http://localhost/fpe-workbook-master/" />
               <label for="course_id">ID kurzu</label>
               <input name="course_id" type="number" value="" />
               <label for="new_description">Popis kurzu</label>
@@ -99,28 +115,48 @@
           </div>
         </div>
       </section>
+      <section role="region" class="section">
+        <div class="container">
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <h3>Nastavení tříd</h3>
+            <form method="POST" action="http://hana.fpe.zcu.cz/routes/classroom/create.php">
+              <input name="success_url" type="hidden" value="http://localhost/fpe-workbook-master/admin/nastaveni-uctu-ucitel.php" />
+              <input name="error_url" type="hidden" value="http://localhost/fpe-workbook-master/" />
+              <label for="name">ID kurzu</label>
+              <input name="course_id" type="number" value="" />
+              <label for="name">Název třídy</label>
+              <input name="name" type="text" value="" />
+              <input type="submit" value="Vytvořit třídu" />
+            </form>
+            <form method="POST" action="/routes/classroom/updateName.php">
+              <input name="success_url" type="hidden" value="http://localhost/fpe-workbook-master/admin/nastaveni-uctu-ucitel.php" />
+              <input name="error_url" type="hidden" value="http://localhost/fpe-workbook-master/" />
+              <label for="classroom_id">ID třídy</label>
+              <input name="classroom_id" type="number" value="" />
+              <label for="name">Název třídy</label>
+              <input name="classroom_id" type="number" value="" />
+              <input type="submit" value="Změnit jméno třídy" />
+            </form>
+            <form method="POST" action="http://hana.fpe.zcu.cz/routes/classroom/deleteClassroom.php">
+              <input name="success_url" type="hidden" value="http://localhost/fpe-workbook-master/admin/nastaveni-uctu-ucitel.php" />
+              <input name="error_url" type="hidden" value="http://localhost/fpe-workbook-master/" />
+              <label for="classroom_id">ID třídy</label>
+              <input name="classroom_id" type="number" value="" />
+              <input type="submit" value="Smazat třídu" />
+              </form>
+          </div>
+        </div>
+      </section>
 
       <section role="region" class="section">
         <div class="container">
           <div class="topic">
            <div class="open">
               <h2 class="question"><strong>Náhled - učitelé</strong></h2>
-              <span class="faq-t" onclick="showTeachers()"></span>
+              <span class="faq-t" onclick="showTeachers();"></span>
            </div>
            <div class="answer">
-             <table>
-               <tr>
-                 <th width="25%">ID</th>
-                 <th width="25%">Jméno</th>
-                 <th width="25%">Email</th>
-                 <th width="25%">Publisher</th>
-               </tr>
-               <tr>
-                 <td width="25%">1</td>
-                 <td width="25%">xxx</td>
-                 <td width="25%">xxx</td>
-                 <td width="25%">ano</td>
-               </tr>
+             <table id="teacherstable"> 
              </table>
            </div>
          </div>
@@ -132,19 +168,7 @@
                <span class="faq-t" onclick="showClasses()"></span>
             </div>
             <div class="answer">
-              <table>
-                <tr>
-                  <th width="25%">ID</th>
-                  <th width="25%">Jméno</th>
-                  <th width="25%">ID Učitel</th>
-                  <th width="25%">ID Kurz</th>
-                </tr>
-                <tr>
-                  <td width="25%">1</td>
-                  <td width="25%">xxx</td>
-                  <td width="25%">3</td>
-                  <td width="25%">10</td>
-                </tr>
+              <table id="teacherstable2">
               </table>
             </div>
           </div>
@@ -156,199 +180,180 @@
              <span class="faq-t" onclick="showCourses()"></span>
           </div>
           <div class="answer">
-            <table>
-              <tr>
-                <th width="25%">ID</th>
-                <th width="25%">Jméno</th>
-                <th width="25%">Popis</th>
-                <th width="25%">ID Učitel</th>
-              </tr>
-              <tr>
-                <td width="25%">16</td>
-                <td width="25%">xxx</td>
-                <td width="25%">Ovládání závory</td>
-                <td width="25%">10</td>
-              </tr>
+            <table id="teacherstable3">
             </table>
           </div>
         </div>
       </div>
       </section>
+      <div id="courseId">course id</div>
     </main>
     <?php include "../partials/footer-admin.php" ?>
+
     <script>
-    function showTeachers() {
-  document.getElementById('teacherstable').textContent = 'Fetching...';
-  const Data = fetch('http://hana.fpe.zcu.cz/routes/teacher/getTeachersInfo.php?page_size=10000&page_number=1', {
-      credentials: 'include',
+const Data = fetch('http://hana.fpe.zcu.cz/routes/teacher/getMyInfo.php', {
+    credentials: 'include',
   })
-      .then(response => {
-          return response.text();
-      })
+    .then(response => {
+      return response.text();
+    })
+    .then(answerString => {
+      return JSON.parse(answerString);
+    })
+    .then(ans => {
+     if (ans.id) {
+        document.getElementById('teacherID').textContent = ans.id;
+        
+      } else {
+        document.getElementById('teacherID').textContent = 'None';
+      }
+      if (ans.name) {
+        document.getElementById('teacherName').textContent = ans.name;
+        
+      } else {
+        document.getElementById('teacherName').textContent = 'None';
+      }
+      if (ans.email) {
+        document.getElementById('teacherEmail').textContent = ans.email;
+        
+      } else {
+        document.getElementById('teacherEmail').textContent = 'None';
+      }
+      if (ans.is_publisher==1) {
+        document.getElementById('teacherPublisher').textContent = 'Ano';
+        
+      } else {
+        document.getElementById('teacherPublisher').textContent = 'Ne';
+      }
+    });
+    function showCourses() {
 
-      .then(answerString => {
-          return JSON.parse(answerString);
-      })
-
-      .then(ans => {
-          if (typeof ans !== 'undefined' && ans.length > 0) {
-              var table = "<table>";
-              table += "<tr><th>ID</th><th>jméno</th><th>e-mail</th><th>publisher</th><th</th></tr>"
-              ans.forEach(function (teacher) {
-                  var publisher = "NE";
-                  var publisherbtn = "grant";
-                  var url = "http://hana.fpe.zcu.cz/routes/teacher/grantPublisherAccess.php";
-                  if (teacher.is_publisher == 1) {
-                      publisher = "ANO";
-                      url = "http://hana.fpe.zcu.cz/routes/teacher/revokePublisherAccess.php";
-                      publisherbtn = "revoke";
-                  }
-
-                var form = "<form method=\"POST\" action=\""+url+"\">\
-<input name=\"teacher_id\" type=\"hidden\" value=\""+teacher.id+"\" />\
-<input type=\"submit\" value=\""+publisherbtn+"\" />\
-</form>";
-                  table += "<tr><td>" + teacher.id + "</td><td>" + teacher.name + "</td><td>" + teacher.email + "</td><td>" + publisher + "</td><td>"+form+"</td></tr>";
-              });
-              table += "</table>";
-              document.getElementById('teacherstable').innerHTML = table;
-          } else{
-            if(ans.error){
-              document.getElementById('teacherstable').textContent = ans.error;
-              } else{
-                document.getElementById('teacherstable').textContent = "error";
-              }
-          }
-
-
-      });
 
 }
+function showTeachers() {
+    const Data = fetch('http://hana.fpe.zcu.cz/routes/teacher/getTeachersInfo.php?page_size=10000&page_number=1', {
+        credentials: 'include',
+    })
+        .then(response => {
+            return response.text();
+        })
 
-function setAccess(id, state) {
+        .then(answerString => {
+            return JSON.parse(answerString);
+        })
+
+        .then(ans => {
+            if (typeof ans !== 'undefined' && ans.length > 0) {
+                var table = "<table>";
+                table += "<tr><th>ID</th><th>jméno</th><th>e-mail</th><th>publisher</th><th</th></tr>"
+                ans.forEach(function (teacher) {
+                    var publisher = "NE";
+                    var publisherbtn = "grant";
+                    var url = "http://hana.fpe.zcu.cz/routes/teacher/grantPublisherAccess.php";
+                    if (teacher.is_publisher == 1) {
+                        publisher = "ANO";
+                        url = "http://hana.fpe.zcu.cz/routes/teacher/revokePublisherAccess.php";
+                        publisherbtn = "revoke";
+                    }
+                    
+                  var form =  "<form method=\"POST\" action=\""+url+"\">\
+  <input name=\"teacher_id\" type=\"hidden\" value=\""+teacher.id+"\" />\
+<input name=\"success_url\" type=\"hidden\" value=\"http://localhost/fpe-workbook-master/admin/nastaveni-uctu-ucitel.php\" />\
+<input name=\"error_url\" type=\"hidden\" value=\"http://localhost/fpe-workbook-master/admin/nastaveni-uctu-ucitel.php\" />\
+  <input type=\"submit\" value=\""+publisherbtn+"\" />\
+  </form>";                                  
+                    table += "<tr><td>" + teacher.id + "</td><td>" + teacher.name + "</td><td>" + teacher.email + "</td><td>" + publisher + "</td><td>"+form+"</td></tr>";
+                });
+                table += "</table>";       
+                document.getElementById('teacherstable').innerHTML = table;
+            } else{
+              if(ans.error){
+                document.getElementById('teacherstable').textContent = ans.error;   
+                } else{
+                  document.getElementById('teacherstable').textContent = "error";   
+                }
+            }
 
 
-
-fetch(url, {
-method: 'post',
-headers: {
-  "Accept":"application/json",
-  'Content-Type': 'application/json'
-},
-body: JSON.stringify({teacher_id: id})
-}).then(res=>res.json())
-.then(res => console.log(res));
+        });
 
 }
-
-function getGroupInfoByIdForTeacher(x) {
-const Data = fetch('http://hana.fpe.zcu.cz//routes/group/getGroupInfoByIdForTeacher.php?group_id='+x, {
-  credentials: 'include',
-})
-  .then(response => {
-    return response.text();
-  })
-  .then(answerString => {
-    return JSON.parse(answerString);
-  })
-  .then(ans => {
-   if (ans.name) {
-      document.getElementById('groupName').textContent = ans.name;
-
-    } else {
-      document.getElementById('groupName').textContent = 'None';
-    }
-    if (ans.classroom_id) {
-      document.getElementById('classroomId').textContent = ans.classroom_id;
-
-    } else {
-      document.getElementById('classroomId').textContent = 'None';
-    }
-  });
-}
-
-
-
-
-
-
 
 function showClasses() {
-  document.getElementById('teacherstable').textContent = 'Fetching...';
-  const Data = fetch('http://hana.fpe.zcu.cz/routes/classroom/getAllClassroomInfo.php?page_size=10000&page_number=1', {
-      credentials: 'include',
-  })
-      .then(response => {
-          return response.text();
-      })
+    const Data = fetch('http://hana.fpe.zcu.cz/routes/classroom/getAllClassroomInfo.php?page_size=10000&page_number=1', {
+        credentials: 'include',
+    })
+        .then(response => {
+            return response.text();
+        })
 
-      .then(answerString => {
-          return JSON.parse(answerString);
-      })
+        .then(answerString => {
+            return JSON.parse(answerString);
+        })
 
-      .then(ans => {
-          if (typeof ans !== 'undefined' && ans.length > 0) {
-              var table = "<table>";
-              table += "<tr><th>ID</th><th>jméno</th><th>ucitel ID</th><th>course ID</th><th</th></tr>"
-              ans.forEach(function (clas) {
+        .then(ans => {
+            if (typeof ans !== 'undefined' && ans.length > 0) {
+                var table = "<table>";
+                table += "<tr><th>ID</th><th>jméno</th><th>ucitel ID</th><th>course ID</th><th</th></tr>"
+                ans.forEach(function (clas) {
+
+                                   
+                    table += "<tr><td>" + clas.id + "</td><td>" + clas.name + "</td><td>" + clas.teacher_id + "</td><td>" +  clas.course_id;
+                });
+                table += "</table>";       
+                document.getElementById('teacherstable2').innerHTML = table;
+            } else{
+              if(ans.error){
+                document.getElementById('teacherstable2').textContent = ans.error;   
+                } else{
+                  document.getElementById('teacherstable2').textContent = "error";   
+                }
+            }
 
 
-                  table += "<tr><td>" + clas.id + "</td><td>" + clas.name + "</td><td>" + clas.teacher_id + "</td><td>" +  clas.course_id;
-              });
-              table += "</table>";
-              document.getElementById('teacherstable').innerHTML = table;
-          } else{
-            if(ans.error){
-              document.getElementById('teacherstable').textContent = ans.error;
-              } else{
-                document.getElementById('teacherstable').textContent = "error";
-              }
-          }
-
-
-      });
+        });
 
 }
-
-
-
 
 function showCourses() {
-  document.getElementById('teacherstable').textContent = 'Fetching...';
-  const Data = fetch('http://hana.fpe.zcu.cz/routes/course/getCoursesInfo.php?page_size=10000&page_number=1', {
-      credentials: 'include',
-  })
-      .then(response => {
-          return response.text();
-      })
+    document.getElementById('teacherstable').textContent = 'Fetching...';
+    const Data = fetch('http://hana.fpe.zcu.cz/routes/course/getCoursesInfo.php?page_size=10000&page_number=1', {
+        credentials: 'include',
+    })
+        .then(response => {
+            return response.text();
+        })
 
-      .then(answerString => {
-          return JSON.parse(answerString);
-      })
+        .then(answerString => {
+            return JSON.parse(answerString);
+        })
 
-      .then(ans => {
-          if (typeof ans !== 'undefined' && ans.length > 0) {
-              var table = "<table>";
-              table += "<tr><th>ID</th><th>jméno</th><th>popis</th><th>ucitel ID</th><th</th></tr>"
-              ans.forEach(function (course) {
+        .then(ans => {
+            if (typeof ans !== 'undefined' && ans.length > 0) {
+                var table = "<table>";
+                table += "<tr><th>ID</th><th>jméno</th><th>popis</th><th>ucitel ID</th><th</th></tr>"
+                ans.forEach(function (course) {
+
+                                   
+                    table += "<tr><td>" + course.id + "</td><td>" + course.name + "</td><td>" + course.description + "</td><td>" +  course.publisher_id;
+                });
+                table += "</table>";       
+                document.getElementById('teacherstable3').innerHTML = table;
+            } else{
+              if(ans.error){
+                document.getElementById('teacherstable3').textContent = ans.error;   
+                } else{
+                  document.getElementById('teacherstable3').textContent = "error";   
+                }
+            }
 
 
-                  table += "<tr><td>" + course.id + "</td><td>" + course.name + "</td><td>" + course.description + "</td><td>" +  course.publisher_id;
-              });
-              table += "</table>";
-              document.getElementById('teacherstable').innerHTML = table;
-          } else{
-            if(ans.error){
-              document.getElementById('teacherstable').textContent = ans.error;
-              } else{
-                document.getElementById('teacherstable').textContent = "error";
-              }
-          }
-
-
-      });
+        });
 
 }
+
+
+
     </script>
   </body>
 </html>
