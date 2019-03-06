@@ -53,8 +53,8 @@
             Učitelská role Vás přesměruje na stránku s žádostí o udělení přístupu k metodickým materiálům. Nechceme totiž, aby žáci místo skutečného řešení problémů hledali zpracované odpovědi.
           </p>
           <div class="row text-center mt-40">
-            <a href="#" class="button">ŽÁK</a>
-            <a href="#" class="button">UČITEL</a>
+            <a href="./admin/nastaveni-uctu-skupina.php" class="button">ŽÁK</a>
+            <a href="./admin/nastaveni-uctu-ucitel.php" class="button">UČITEL</a>
           </div>
         </div>
       </section>
