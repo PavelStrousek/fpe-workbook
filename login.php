@@ -18,8 +18,10 @@
           <div class="row">
             <div class="col-md-4 col-md-offset-2">
               <h3>Přihlášení - učitel</h3>
-              <form action="/login" method="post">
-                <label for="frm-login-name" class="text-left">Uživatelské jméno / Email</label>
+              <form action="http://hana.fpe.zcu.cz/routes/teacher/authorise.php" method="post">
+                <input name="success_url" type="hidden" value="http://localhost/fpe-workbook-master/login.php" />
+                <input name="error_url" type="hidden" value="http://localhost/fpe-workbook-master/login.php" />
+                <label for="frm-login-name" class="text-left">Email</label>
                 <input type="text" name="email" id="frm-login-name" required="" data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;This field is required.&quot;}]">
                 <label for="frm-login-password" class="text-left">Heslo</label>
                 <input type="password" name="password" id="frm-login-password" required="" data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;This field is required.&quot;}]">
@@ -28,9 +30,11 @@
             </div>
             <div class="col-md-4">
               <h3>Přihlášení - skupina</h3>
-              <form action="/login" method="post">
-                <label for="frm-login-name" class="text-left">Uživatelské jméno / Email</label>
-                <input type="text" name="email" id="frm-login-name2" required="" data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;This field is required.&quot;}]">
+              <form action="http://hana.fpe.zcu.cz/routes/group/authorise.php" method="post">
+                <input name="success_url" type="hidden" value="http://localhost/fpe-workbook-master/admin/nastaveni-uctu-skupina.php" />
+                <input name="error_url" type="hidden" value="http://localhost/fpe-workbook-master/login.php" />
+                <label for="frm-login-name" class="text-left">Uživatelské jméno</label>
+                <input type="text" name="name" id="frm-login-name2" required="" data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;This field is required.&quot;}]">
                 <label for="frm-login-password" class="text-left">Heslo</label>
                 <input type="password" name="password" id="frm-login-password2" required="" data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;This field is required.&quot;}]">
                 <input type="submit" name="login" value="Přihlásit">
@@ -48,9 +52,9 @@
         <div class="container">
           <div class="col-md-4 col-md-offset-4">
             <h3>Zapomenuté heslo</h3>
-            <form action="/login" method="post">
+            <form action="http://hana.fpe.zcu.cz/routes/teacher/resetPassword.php" method="post">
               <label for="frm-registration-name">Uživatelské jméno</label>
-              <input type="text" name="email2" id="frm-registration-name" required="" data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;This field is required.&quot;}]">
+              <input type="text" name="name" id="frm-registration-name" required="" data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;This field is required.&quot;}]">
               <label for="frm-registration-email">Email</label>
               <input type="text" name="email" id="frm-registration-email" required="" data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;This field is required.&quot;}]">
               <input type="submit" name="login" value="Odeslat">
