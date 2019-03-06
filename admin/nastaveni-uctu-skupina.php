@@ -18,10 +18,10 @@
           <div class="row">
             <div class="col-md-4 col-md-offset-4 text-center">
               <h3>Skupina</h3>
-              <p>Název:</p>
-                <div id="groupName"></div>
-              <p>ID:</p>
-              <div id="groupId"></div>
+              <p><strong>Název:</strong></p>
+              <p id="groupName"></p>
+              <p><strong>ID:</strong></p>
+              <p id="groupId"></p>
             </div>
           </div>
         </div>
@@ -59,6 +59,10 @@
             <table id="teacherstable3">
             </table>
           </div>
+            </div>
+          </div>
+        </div>
+        </section>
     </main>
     <?php include "../partials/footer-admin.php" ?>
   </body>
@@ -75,13 +79,13 @@ const Data = fetch('http://hana.fpe.zcu.cz/routes/group/getGroupInfoByIdForGroup
     .then(ans => {
      if (ans.name) {
         document.getElementById('groupName').textContent = ans.name;
-        
+
       } else {
         document.getElementById('groupName').textContent = 'None';
       }
       if (ans.classroom_id) {
         document.getElementById('groupId').textContent = ans.classroom_id;
-        
+
       } else {
         document.getElementById('groupId').textContent = 'None';
       }
@@ -106,16 +110,16 @@ const Data = fetch('http://hana.fpe.zcu.cz/routes/group/getGroupInfoByIdForGroup
                 table += "<tr><th>ID</th><th>jméno</th><th>popis</th><th>ucitel ID</th><th</th></tr>"
                 ans.forEach(function (course) {
 
-                                   
+
                     table += "<tr><td>" + course.name + "</td><td>" + course.classroom_id + "</td><td>";
                 });
-                table += "</table>";       
+                table += "</table>";
                 document.getElementById('teacherstable').innerHTML = table;
             } else{
               if(ans.error){
-                document.getElementById('teacherstable').textContent = ans.error;   
+                document.getElementById('teacherstable').textContent = ans.error;
                 } else{
-                  document.getElementById('teacherstable').textContent = "error";   
+                  document.getElementById('teacherstable').textContent = "error";
                 }
             }
 

@@ -18,14 +18,14 @@
           <div class="row">
             <div class="col-md-4 col-md-offset-4 text-center">
               <h3>Učitel</h3>
-              <p>Jméno:</p>
-                <div id="teacherName"></div>
-              <p>Email:</p>
-                <div id="teacherEmail"></div>
-              <p>ID:</p>
-                <div id="teacherID"></div>
-              <p>Publisher:</p>
-                <div id="teacherPublisher"></div>
+              <p><strong>Jméno:</strong></p>
+              <p id="teacherName"></p>
+              <p><strong>Email:</strong></p>
+              <p id="teacherEmail"></p>
+              <p><strong>ID:</strong></p>
+              <p id="teacherID"></p>
+              <p><strong>Publisher:</strong></p>
+              <p id="teacherPublisher"></p>
             </div>
           </div>
         </div>
@@ -156,7 +156,7 @@
               <span class="faq-t" onclick="showTeachers();"></span>
            </div>
            <div class="answer">
-             <table id="teacherstable"> 
+             <table id="teacherstable">
              </table>
            </div>
          </div>
@@ -203,25 +203,25 @@ const Data = fetch('http://hana.fpe.zcu.cz/routes/teacher/getMyInfo.php', {
     .then(ans => {
      if (ans.id) {
         document.getElementById('teacherID').textContent = ans.id;
-        
+
       } else {
         document.getElementById('teacherID').textContent = 'None';
       }
       if (ans.name) {
         document.getElementById('teacherName').textContent = ans.name;
-        
+
       } else {
         document.getElementById('teacherName').textContent = 'None';
       }
       if (ans.email) {
         document.getElementById('teacherEmail').textContent = ans.email;
-        
+
       } else {
         document.getElementById('teacherEmail').textContent = 'None';
       }
       if (ans.is_publisher==1) {
         document.getElementById('teacherPublisher').textContent = 'Ano';
-        
+
       } else {
         document.getElementById('teacherPublisher').textContent = 'Ne';
       }
@@ -255,22 +255,22 @@ function showTeachers() {
                         url = "http://hana.fpe.zcu.cz/routes/teacher/revokePublisherAccess.php";
                         publisherbtn = "revoke";
                     }
-                    
+
                   var form =  "<form method=\"POST\" action=\""+url+"\">\
   <input name=\"teacher_id\" type=\"hidden\" value=\""+teacher.id+"\" />\
 <input name=\"success_url\" type=\"hidden\" value=\"http://localhost/fpe-workbook-master/admin/nastaveni-uctu-ucitel.php\" />\
 <input name=\"error_url\" type=\"hidden\" value=\"http://localhost/fpe-workbook-master/admin/nastaveni-uctu-ucitel.php\" />\
   <input type=\"submit\" value=\""+publisherbtn+"\" />\
-  </form>";                                  
+  </form>";
                     table += "<tr><td>" + teacher.id + "</td><td>" + teacher.name + "</td><td>" + teacher.email + "</td><td>" + publisher + "</td><td>"+form+"</td></tr>";
                 });
-                table += "</table>";       
+                table += "</table>";
                 document.getElementById('teacherstable').innerHTML = table;
             } else{
               if(ans.error){
-                document.getElementById('teacherstable').textContent = ans.error;   
+                document.getElementById('teacherstable').textContent = ans.error;
                 } else{
-                  document.getElementById('teacherstable').textContent = "error";   
+                  document.getElementById('teacherstable').textContent = "error";
                 }
             }
 
@@ -297,16 +297,16 @@ function showClasses() {
                 table += "<tr><th>ID</th><th>jméno</th><th>ucitel ID</th><th>course ID</th><th</th></tr>"
                 ans.forEach(function (clas) {
 
-                                   
+
                     table += "<tr><td>" + clas.id + "</td><td>" + clas.name + "</td><td>" + clas.teacher_id + "</td><td>" +  clas.course_id;
                 });
-                table += "</table>";       
+                table += "</table>";
                 document.getElementById('teacherstable2').innerHTML = table;
             } else{
               if(ans.error){
-                document.getElementById('teacherstable2').textContent = ans.error;   
+                document.getElementById('teacherstable2').textContent = ans.error;
                 } else{
-                  document.getElementById('teacherstable2').textContent = "error";   
+                  document.getElementById('teacherstable2').textContent = "error";
                 }
             }
 
@@ -334,16 +334,16 @@ function showCourses() {
                 table += "<tr><th>ID</th><th>jméno</th><th>popis</th><th>ucitel ID</th><th</th></tr>"
                 ans.forEach(function (course) {
 
-                                   
+
                     table += "<tr><td>" + course.id + "</td><td>" + course.name + "</td><td>" + course.description + "</td><td>" +  course.publisher_id;
                 });
-                table += "</table>";       
+                table += "</table>";
                 document.getElementById('teacherstable3').innerHTML = table;
             } else{
               if(ans.error){
-                document.getElementById('teacherstable3').textContent = ans.error;   
+                document.getElementById('teacherstable3').textContent = ans.error;
                 } else{
-                  document.getElementById('teacherstable3').textContent = "error";   
+                  document.getElementById('teacherstable3').textContent = "error";
                 }
             }
 
