@@ -18,14 +18,22 @@
           <div class="row">
             <div class="col-md-4 col-md-offset-4 text-center">
               <h3>Učitel</h3>
-              <p><strong>Jméno:</strong></p>
-              <p id="teacherName"></p>
-              <p><strong>Email:</strong></p>
-              <p id="teacherEmail"></p>
-              <p><strong>ID:</strong></p>
-              <p id="teacherID"></p>
-              <p><strong>Publisher:</strong></p>
-              <p id="teacherPublisher"></p>
+              <div class="display-flex">
+                <p><strong>Jméno:&nbsp</strong></p>
+                <p id="teacherName"></p>
+              </div>
+              <div class="display-flex">
+                <p><strong>Email:&nbsp</strong></p>
+                <p id="teacherEmail"></p>
+              </div>
+              <div class="display-flex">
+                <p><strong>ID:&nbsp</strong></p>
+                <p id="teacherID"></p>
+              </div>
+              <div class="display-flex">
+                <p><strong>Publisher:&nbsp</strong></p>
+                <p id="teacherPublisher"></p>
+              </div>
             </div>
           </div>
         </div>
@@ -34,10 +42,16 @@
         <div class="container text-center">
           <div class="col-md-8 col-md-offset-2">
             <h3 class="mt-20">Nastavení group</h3>
-            <p><strong>Group jméno:</strong></p>
-            <div><p>ahoj</p></div>
-            <p><strong>ID třídy:</strong></p>
-            <div class="mb-20"><p>ahoj</p></div>
+            
+            <div class="display-flex">
+              <p><strong>Group jméno:&nbsp</strong></p>
+              <div><p>ahoj</p></div>
+            </div>
+            <div class="display-flex mb-20">
+              <p><strong>ID třídy:&nbsp</strong></p>
+              <div><p>ahoj</p></div>
+            </div>
+
             <form action="/login" method="post">
               <label for="frm-registration-name">Najít group</label>
               <input name="group_id" id="groupID" type="number" />

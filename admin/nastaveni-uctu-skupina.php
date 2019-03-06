@@ -18,10 +18,14 @@
           <div class="row">
             <div class="col-md-4 col-md-offset-4 text-center">
               <h3>Skupina</h3>
-              <p><strong>Název:</strong></p>
-              <p id="groupName"></p>
-              <p><strong>ID:</strong></p>
-              <p id="groupId"></p>
+              <div class="display-flex">
+                <p><strong>Název:&nbsp</strong></p>
+                <p id="groupName"></p>
+              </div>
+              <div class="display-flex">
+                <p><strong>ID:&nbsp</strong></p>
+                <p id="groupId"></p>
+              </div>
             </div>
           </div>
         </div>
