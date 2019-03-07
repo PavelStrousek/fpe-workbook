@@ -4,11 +4,11 @@
       <div class="col-xs-5 col-md-3">
         <a href="../" class="logo" title="Lego učebnice"><img src="../assets/images/robot_icon.png" alt="Logo"></a>
       </div>
-      <div class="col-md-9 text-right">      
+      <div class="col-md-9 text-right">
         <form method="POST" action="http://hana.fpe.zcu.cz/routes/group/unauthorise.php">
           <input name="success_url" type="hidden" value="http://localhost/fpe-workbook-master/" />
           <input name="error_url" type="hidden" value="http://localhost/fpe-workbook-master/admin/nastaveni-uctu-skupina.php" />
-          <input type="submit"  value="odhlaseni" />
+          <input type="submit"  value="Odhlášení" class="button mr-65 b_registration prihlaseni" style="width: 143px;"/>
         </form>
         <div class="menu-box" aria-label="Menu">
           <div class="menu-box__item" aria-hidden="true"></div>

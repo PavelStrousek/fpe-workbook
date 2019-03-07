@@ -42,7 +42,7 @@
         <div class="container text-center">
           <div class="col-md-8 col-md-offset-2">
             <h3 class="mt-20">Nastavení skupiny</h3>
-            
+
             <div class="display-flex">
               <p><strong>Skupina jméno:&nbsp</strong></p>
               <div id="groupName"><p></p></div>
@@ -164,24 +164,27 @@
               <input name="classroom_id" type="number" value="" />
               <input type="submit" value="Smazat třídu" />
               </form>
+
+              <div class="display-flex mt-20">
+                <p><strong>Třída jméno:&nbsp</strong></p>
+              <div id="className"><p></p></div>
+              </div>
+              <div class="display-flex" >
+                <p><strong>ID učitele:&nbsp</strong></p>
+                <div id="classTeacherId"><p></p></div>
+              </div>
+              <div class="display-flex mb-20">
+                <p><strong>ID kurzu:&nbsp</strong></p>
+                <div id="courseId"><p></p></div>
+              </div>
+
+              <form action="">
+                <label for="frm-registration-name">Najít třídu</label>
+                  <input name="classroom_id" id="idTridyFind" type="number" />
+                <input type="button" onclick="getClassroomInfoById(document.getElementById('idTridyFind').value);" value="Najít">
+              </form>
           </div>
         </div>
-        <div class="display-flex">
-              <p><strong>Třída jméno:&nbsp</strong></p>
-              <div id="className"><p></p></div>
-            </div>
-            <div class="display-flex" >
-              <p><strong>ID učitele:&nbsp</strong></p>
-              <div id="classTeacherId"><p></p></div>
-            </div>
-            <div class="display-flex mb-20">
-              <p><strong>ID kurzu:&nbsp</strong></p>
-              <div id="courseId"><p></p></div>
-              
-            </div>
-            <label for="frm-registration-name">Najít třídu</label>
-              <input name="classroom_id" id="idTridyFind" type="number" />
-            <input type="button" onclick="getClassroomInfoById(document.getElementById('idTridyFind').value);" value="Najít">      
       </section>
 
       <section role="region" class="section" id="grandTecher1">
@@ -377,13 +380,13 @@ const Data = fetch('http://hana.fpe.zcu.cz//routes/group/getGroupInfoByIdForTeac
     .then(ans => {
      if (ans.name) {
         document.getElementById('groupName').textContent = ans.name;
-        
+
       } else {
         document.getElementById('groupName').textContent = 'None';
       }
       if (ans.classroom_id) {
         document.getElementById('classroomId').textContent = ans.classroom_id;
-        
+
       } else {
         document.getElementById('classroomId').textContent = 'None';
       }
@@ -402,19 +405,19 @@ const Data = fetch('http://hana.fpe.zcu.cz/routes/classroom/getClassroomInfoById
     .then(ans => {
      if (ans.name) {
         document.getElementById('className').textContent = ans.name;
-        
+
       } else {
         document.getElementById('className').textContent = 'None';
       }
       if (ans.teacher_id) {
         document.getElementById('classTeacherId').textContent = ans.teacher_id;
-        
+
       } else {
         document.getElementById('classTeacherId').textContent = 'None';
       }
       if (ans.course_id) {
         document.getElementById('courseId').textContent = ans.course_id;
-        
+
       } else {
         document.getElementById('courseId').textContent = 'None';
       }
