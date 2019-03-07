@@ -39,9 +39,7 @@
           </p>
         </div>
       </section>
-          </div>
-        </div>
-      </section>
+      
     </main>
     <?php include "partials/footer.php" ?>
   </body>
