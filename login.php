@@ -19,7 +19,7 @@
             <div class="col-md-4 col-md-offset-2">
               <h3>Přihlášení - učitel</h3>
               <form action="http://hana.fpe.zcu.cz/routes/teacher/authorise.php" method="post">
-                <input name="success_url" type="hidden" value="http://localhost/fpe-workbook-master/login.php" />
+                <input name="success_url" type="hidden" value="http://localhost/fpe-workbook-master/admin/nastaveni-uctu-ucitel.php" />
                 <input name="error_url" type="hidden" value="http://localhost/fpe-workbook-master/login.php" />
                 <label for="frm-login-name" class="text-left">Email</label>
                 <input type="text" name="email" id="frm-login-name" required="" data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;This field is required.&quot;}]">
@@ -51,7 +51,7 @@
       <section role="region" class="section">
         <div class="container">
           <div class="col-md-4 col-md-offset-4">
-            <h3>Zapomenuté heslo</h3>
+            <h3>Zapomenuté heslo učitele</h3>
             <form action="http://hana.fpe.zcu.cz/routes/teacher/resetPassword.php" method="post">
               <label for="frm-registration-name">Uživatelské jméno</label>
               <input type="text" name="name" id="frm-registration-name" required="" data-nette-rules="[{&quot;op&quot;:&quot;:filled&quot;,&quot;msg&quot;:&quot;This field is required.&quot;}]">

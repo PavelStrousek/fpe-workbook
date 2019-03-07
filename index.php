@@ -39,22 +39,6 @@
           </p>
         </div>
       </section>
-
-      <section role="region" class="section bg-light-green">
-        <div class="container">
-          <h2 class="mb-20">Zvol svou roli</h2>
-          <p>
-            Abychom věděli, jaký obsah Vám zobrazit, zvolte, prosím svou roli.
-          </p>
-          <p>
-            Žákovskou rolí se dostanete přímo na první aktivitu učebnice.
-          </p>
-          <p>
-            Učitelská role Vás přesměruje na stránku s žádostí o udělení přístupu k metodickým materiálům. Nechceme totiž, aby žáci místo skutečného řešení problémů hledali zpracované odpovědi.
-          </p>
-          <div class="row text-center mt-40">
-            <a href="./admin/nastaveni-uctu-skupina.php" class="button">ŽÁK</a>
-            <a href="./admin/nastaveni-uctu-ucitel.php" class="button">UČITEL</a>
           </div>
         </div>
       </section>
