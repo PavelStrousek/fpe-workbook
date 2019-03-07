@@ -12,7 +12,7 @@
   </head>
   <body>
     <?php include "../partials/header-admin-skupina.php" ?>
-    <main role="main">
+    <main role="main" id="prava0">
       <section role="region" class="section">
         <div class="container">
           <div class="row">
@@ -86,8 +86,10 @@ const Data = fetch('http://hana.fpe.zcu.cz/routes/group/getGroupInfoByIdForGroup
     .then(ans => {
      if (ans.name) {
         document.getElementById('groupName').textContent = ans.name;
+        document.getElementById("prava0").style.display = "block";
       } else {
         document.getElementById('groupName').textContent = 'None';
+        document.getElementById("prava0").style.display = "none";
       }
       if (ans.classroom_id) {
         document.getElementById('groupId').textContent = ans.classroom_id;

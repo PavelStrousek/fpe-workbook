@@ -12,7 +12,7 @@
   </head>
   <body>
     <?php include "../partials/header-admin-ucitel.php" ?>
-    <main role="main">
+    <main role="main"id="prava0">
       <section role="region" class="section">
         <div class="container">
           <div class="row">
@@ -243,8 +243,10 @@ const Data = fetch('http://hana.fpe.zcu.cz/routes/teacher/getMyInfo.php', {
     .then(ans => {
      if (ans.id) {
         document.getElementById('teacherID').textContent = ans.id;
+        document.getElementById("prava0").style.display = "block";
       } else {
         document.getElementById('teacherID').textContent = 'None';
+        document.getElementById("prava0").style.display = "none";
       }
       if (ans.name) {
         document.getElementById('teacherName').textContent = ans.name;
