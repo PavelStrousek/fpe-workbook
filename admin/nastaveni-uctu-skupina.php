@@ -11,7 +11,7 @@
     <!--<link href="assets/css/style.min.css" rel="stylesheet">-->
   </head>
   <body>
-    <?php include "../partials/header-admin.php" ?>
+    <?php include "../partials/header-admin-skupina.php" ?>
     <main role="main">
       <section role="region" class="section">
         <div class="container">
@@ -48,14 +48,17 @@
               <input name="new_password" type="password" />
             <input type="submit" value="Změnit" />
             </form>
-            <form method="POST" action="http://hana.fpe.zcu.cz/routes/routes/group/deleteByGroup.php">
+            <form method="POST" action="http://hana.fpe.zcu.cz/routes/group/deleteByGroup.php">
               <input name="success_url" type="hidden" value="http://localhost/fpe-workbook-master/" />
               <input name="error_url" type="hidden" value="http://localhost/fpe-workbook-master/admin/nastaveni-uctu-skupina.php" />
               <label for="id_tridy">Smazat</label>
             <input type="submit" value="Smazat skupinu" />
             </form>
+            <label for="id_tridy">ID třídy</label>
+            <input id="idTridyComponenta"  type="number" />
             <div class="topic">
           <div class="open">
+              
              <h2 class="question"><strong>Náhled - třídy</strong></h2>
              <span class="faq-t" onclick="showClass()"></span>
           </div>
@@ -83,38 +86,31 @@ const Data = fetch('http://hana.fpe.zcu.cz/routes/group/getGroupInfoByIdForGroup
     .then(ans => {
      if (ans.name) {
         document.getElementById('groupName').textContent = ans.name;
-
       } else {
         document.getElementById('groupName').textContent = 'None';
       }
       if (ans.classroom_id) {
         document.getElementById('groupId').textContent = ans.classroom_id;
-
       } else {
         document.getElementById('groupId').textContent = 'None';
       }
     });
-
     function showClass() {
-    document.getElementById('teacherstable').textContent = 'Fetching...';
-    const Data = fetch('http://hana.fpe.zcu.cz/routes/group/getGroupsInfoByClassroom.php?page_size=10000&page_number=1&classroom_id=20', {
+    var x1 = document.getElementById('idTridyComponenta').value;
+    const Data = fetch('http://hana.fpe.zcu.cz/routes/group/getGroupsInfoByClassroom.php?page_size=10000&page_number=1&classroom_id='+x1+'', {
         credentials: 'include',
     })
         .then(response => {
             return response.text();
         })
-
         .then(answerString => {
             return JSON.parse(answerString);
         })
-
         .then(ans => {
             if (typeof ans !== 'undefined' && ans.length > 0) {
                 var table = "<table>";
                 table += "<tr><th>ID</th><th>jméno</th><th>popis</th><th>ucitel ID</th><th</th></tr>"
                 ans.forEach(function (course) {
-
-
                     table += "<tr><td>" + course.name + "</td><td>" + course.classroom_id + "</td><td>";
                 });
                 table += "</table>";
@@ -126,10 +122,7 @@ const Data = fetch('http://hana.fpe.zcu.cz/routes/group/getGroupInfoByIdForGroup
                   document.getElementById('teacherstable').textContent = "error";
                 }
             }
-
-
         });
-
 }
 </script>
 </html>
